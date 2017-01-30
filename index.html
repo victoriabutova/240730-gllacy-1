@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&&amp;subset=cyrillic-ext" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <a href="#" class="logo"></a>
+      <nav class="main-nav">
+        <div class="logo"><img>
+        </div>
+        <ul>
+          <li>Каталог</li>
+          <li>Доставка</li>
+          <li>О компании</li>
+        </ul>
+        <div class="search"></div>
+        <div class="menu">
+          <div class="login">Вход</div>
+          <div class="cart">Пусто</div>
+        </div>
+      </nav>
+    </header>
+    <main>
+    <div class="gallery"></div>
+    <section class="promo">
+      <article class="promo-first">
+        <h2 class="promo__title">Малинка даром!</h2>
+        <p class="promo__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <a href="" class="promo__btn btn">Хочу варенье!</a>
+      </article>
+      <article class="promo-second">
+        <h2 class="promo__title">Шоколадки даром!</h2>
+        <p class="promo__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        <a href="" class="promo__btn btn">Хочу шоколадки!</a>
+      </article>
+    </section>
+    <section class="catalog">
+      <div class="item">
+        <img src="#" alt="">
+        <span class="item__price"></span>
+        <a href="#" class="item__title"></a>
+        <a href="" class="btn btn-preview"></a>
+      </div>
+      <div class="item">
+        <img src="#" alt="">
+        <span class="item__price"></span>
+        <a href="#" class="item__title"></a>
+        <a href="" class="btn btn-preview"></a>
+      </div>
+      <div class="item">
+        <img src="#" alt="">
+        <span class="item__price"></span>
+        <a href="#" class="item__title"></a>
+        <a href="" class="btn btn-preview"></a>
+      </div>
+      <div class="item">
+        <img src="#" alt="">
+        <span class="item__price"></span>
+        <a href="#" class="item__title"></a>
+        <a href="" class="btn btn-preview"></a>
+      </div>
+    </section>
+    <article class="features">
+      <h2 class="features__title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+      <p class="features__icon-ice">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+      <p class="features__icon-leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,
+        экологически чистого сырья.</p>
+      <p class="features__icon-cow">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+      <p class="features__icon-thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет
+        сохранить превосходный вкус.</p>
+    </article>
+    <section class="news-subscriptions">
+      <article class="news">
+        <span>Новое в нашем блоге</span>
+        <a href="" class="news__article">10  способов сервировки фруктовых щербетов к столу</a>
+      </article>
+      <article class="subscription">
+        <p class="subscription__about"></p>
+        <form class="email" action="#" method="get">
+          <fieldset class="email-input">
+            <input type="text" name="email" value="" placeholder="Электронная почта">
+          </fieldset>
+        </form>
+        <a href="" class="btn btn-subscription">Отправить</a>
+      </article>
+    </section>
+    <section class="contacts">
+      <img src="#" alt="карта">
+      <article class="contacts__description">
+        <p class="contacts__text">
+          Адрес главного офиса и офлайн магазина:
+          <span class="contacts__text__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+          Для заказов по телефону:
+          <span class="contacts__text__phone">8 812 450-25-25</span>
+          (с 10 до 20 ежедневно)
+          <a href="" class="btn btn-contacts__feedback">Форма обратной связи</a>
+        </p>
+      </article>
+    </section>
+    <footer class="footer">
+      <section class="footer__social">
+        <a href="#" class="social-btn social-btn-tw"></a>
+        <a href="#" class="social-btn social-btn-inst"></a>
+        <a href="#" class="social-btn social-btn-fb"></a>
+        <a href="#" class="social-btn social-btn-vk"></a>
+      </section>
+      <section class="footer__navigation">
+        <a href="#" class="footer__navigation-link">Для поставщиков</a>
+        <a href="#" class="footer__navigation-link">О производстве</a>
+        <a href="#" class="footer__navigation-link">Наши документы</a>
+        <a href="#" class="footer__navigation-lik">Экологические стандарты</a>
+      </section>
+      <section class="copyright">
+        <span>Сделано в <a class="copyright-link" href="https://htmlacademy.ru">HTML Academy</a> © 2017</span>
+      </section>
+    </footer>
+  </main>
   </body>
 </html>
